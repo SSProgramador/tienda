@@ -1,0 +1,8 @@
+.card{
+    width: 100% !important;
+}
+
+.card-img-top{
+    width: 18rem;
+    position: relative;
+}
