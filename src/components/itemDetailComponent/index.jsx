@@ -9,7 +9,7 @@ export const ItemDetail = (item) => {
             
             <div class="card-body">
                 <h5 class="card-title">{props.title}</h5>    
-                <img src="./images/productos/ceraCarnaubaK78.jpg" class="card-img-top" alt="cera"/>
+                <img src={"../images/productos/"+props.img} class="card-img-top"/>
                 <p class="card-text">
                     {props.descripcion} 
                 </p>

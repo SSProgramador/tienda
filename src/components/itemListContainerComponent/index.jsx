@@ -7,7 +7,14 @@ import './styles.css';
 function DevolverItems() {
     return new Promise(resolve => {
       setTimeout(() => {
-        resolve([{id:1, price:896, title:'Cera', descripcion:'Cera Carauba'},{id:2, price:888, title:'titulo', descripcion:'desc'}])
+        resolve(
+            [
+                {id:1, price:896, title:'Lava autos', descripcion:'Lava Autos Siliconado K78', category:1, img:'lavaautok78.jpg'},
+                {id:2, price:896, title:'Shampoo con cera', descripcion:'Shampoo con cera', category:1, img:'shampooCera.jpg'},
+                {id:3, price:896, title:'Cera', descripcion:'Cera Carauba', category:2, img:'ceraCarnaubaK78.jpg'},
+                {id:4, price:896, title:'Cera', descripcion:'Cera Carauba', category:2, img:'ceraCarnaubaK78.jpg'}
+            ]
+        )
       }, 2000);
     });
 }
@@ -23,7 +30,6 @@ export const ItemListContainer = (props) => {
             console.log(data);
             setItems(data);
         })
-        //const arrayItems = items;
     },[]);
     return <>
         <h2>{props.message}</h2>
